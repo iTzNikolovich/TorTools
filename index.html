@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <!--FAVICON-->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-config" content="favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <!--FAVICON-->
+        <meta name="author" content="iTzNikolovich">
+        <meta charset="utf-8">
+        <title>Torrent Tools | H2M</title>
+        <style>html{font-family: monospace; text-align: center;}</style>
+    </head>
+    <body>
+        <h1>Torrent Tools</h1>
+        <h2>From HASH to MAGNET</h2>
+        <p id="error" style="visibility: hidden; color: rgb(252, 0, 5);">The fields must be filled out.</p>
+        <input type="text" id="hash" placeholder="Torrent Hash..">
+        <br>
+        <input type="text" id="name" placeholder="Torrent Name..">
+        <br>
+        <input type="checkbox" id="trackers">
+        <label class="container">Add trackers</label>
+        <span id="showdiv" style="visibility: hidden;">
+            <input type="checkbox" id="showtext" onclick="showtext()">
+            <label class="container">Show link</label>
+        </span>
+        <br>
+        <input type="submit" value="Generate" onclick="genMagnet()">
+        <br>
+        <a href="" id="alink"><img src="assets/magnet.png" alt="MAGNET" style="width: 60px; visibility: hidden;" id="link"></a>
+        <p id="magnet" style="font-size: 10px; visibility: hidden;"></p>
+    </body>
+    <footer>
+        <a class="github-button" href="https://github.com/iTzNikolovich" aria-label="Follow @iTzNikolovich on GitHub">iTzNikolovich</a>
+        <a class="github-button" href="https://github.com/iTzNikolovich/TorTools" data-icon="octicon-star" aria-label="Star iTzNikolovich/TorTools on GitHub">Star</a>
+        <br>
+        <img src="https://madewithlove.now.sh/it" alt="Made with love in Italy">
+    </footer>
+</html>
